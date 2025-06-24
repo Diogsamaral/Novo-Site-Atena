@@ -175,7 +175,7 @@ const App = () => {
         className="py-20 h-screen bg-linear-to-t from-white via-orange-200 to-yellow-600 text-sky-950 md:py-32 relative"
       >
         <div className="container mx-auto px-4 text-start relative z-10">
-          <h1 className="text-4xl w-2xl md:text-6xl sm:text-7xl font-extrabold leading-tight mb-6">
+          <h1 className="text-4xl w-2xl md:text-6xl font-extrabold leading-tight mb-6">
             Uniformes Profissionais <br className="" /> Que Inspiram Confiança.
           </h1>
           <p className="text-4xl w-md md:text-xl mb-10 max-w-2xl">
@@ -189,7 +189,11 @@ const App = () => {
             Solicite um Orçamento Agora
           </button>
         </div>
-        <img src={capa} alt="" className="w-5xl absolute bottom-0 right-0" />
+        <img
+          src={capa}
+          alt=""
+          className="w-5xl md:w-8xl absolute bottom-0 right-0"
+        />
       </section>
 
       {/* Quem Somos Section */}
