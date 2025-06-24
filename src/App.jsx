@@ -2,10 +2,9 @@ import React, { useState, useEffect } from "react";
 import capa from "../src/assets/capa.png";
 import logo from "../src/assets/logo.png";
 import quemSomos from "../src/assets/quemSomos.png";
-
-// Placeholder para o seu logo. Em um projeto real, você importaria assim:
-// import logo from './seu-logo.png';
-// Por enquanto, usaremos um placeholder para manter o código executável.
+import setorAdm from "../src/assets/setorAdm.png";
+import setorOp from "../src/assets/setorOp.png";
+import setorSaude from "../src/assets/setorSaude.png";
 
 // Main App component
 const App = () => {
@@ -197,21 +196,39 @@ const App = () => {
       </section>
 
       {/* Quem Somos Section */}
-      <section id="quem-somos" className="py-16 md:py-24 bg-white">
+      <section
+        id="quem-somos"
+        className="py-16 h-screen text-sky-950 md:py-24 bg-white"
+      >
         <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Quem Somos
-            </h2>
-            <p className="text-lg text-gray-700 leading-relaxed mb-4">
-              A Atna Uniformes é especialista na criação e produção de uniformes
-              profissionais de alta qualidade, atendendo às necessidades de
-              empresas de diversos setores. Com anos de experiência, unimos
-              design moderno, materiais duráveis e um atendimento personalizado
-              para garantir que sua equipe esteja sempre bem vestida e
-              confortável.
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Quem Somos</h2>
+            <p className="text-lg text-sky-950 leading-relaxed mb-4">
+              O Atelier Neide Amaral é uma empresa especializada na criação e
+              desenvolvimento de moda, com foco na entrega de produtos de alta
+              qualidade em costura e matéria-prima. Cada peça passa por um
+              rigoroso controle de qualidade, onde os detalhes e as
+              características únicas de cada modelo são cuidadosamente
+              valorizados.
             </p>
-            <p className="text-lg text-gray-700 leading-relaxed">
+
+            <p className="text-lg text-sky-950 leading-relaxed mb-4">
+              Nosso portfólio é amplo e versátil: produzimos desde a camisa polo
+              do representante comercial até o vestido de gala usado por
+              celebridades em eventos sofisticados. Independentemente do estilo
+              ou ocasião, cada peça carrega o padrão de excelência que é marca
+              registrada do nosso atelier.
+            </p>
+
+            <p className="text-lg text-sky-950 leading-relaxed mb-4">
+              Essa diversidade de criações ao longo do tempo nos proporcionou
+              não apenas experiência, mas também sensibilidade estética e
+              técnica. Hoje, nossa equipe atua com ainda mais precisão em cada
+              etapa da produção, garantindo resultados alinhados às expectativas
+              e necessidades de cada cliente.
+            </p>
+
+            <p className="text-lg text-sky-950 leading-relaxed">
               Nossa missão é fortalecer a imagem da sua marca através de
               uniformes que refletem profissionalismo, coerência e a identidade
               da sua empresa.
@@ -231,95 +248,94 @@ const App = () => {
       {/* Produtos Section */}
       <section id="produtos" className="py-16 md:py-24 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-sky-950 mb-12">
             Nossos Produtos
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Product Card 1: Social Shirt */}
+            {/* Product Card 1: */}
             <div className="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
               <img
-                src="https://placehold.co/400x300/F0F4F8/6B7A90?text=Camisa+Social"
-                alt="Camisa Social Profissional"
-                className="w-full h-48 object-cover"
+                src={setorAdm}
+                alt="Uniformes Administrativos"
+                className="w-full"
               />
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  Camisas Sociais
+                <h3 className="text-xl font-semibold text-sky-950 mb-2">
+                  Uniformes Administrativos
                 </h3>
                 <p className="text-gray-600 mb-4">
-                  Elegância e conforto para ambientes corporativos. Diversas
-                  cores e tecidos.
+                  Elegância e conforto para ambientes corporativos. Diversos
+                  modelos, cores e tecidos.
                 </p>
                 <button
                   onClick={() => handleNavClick("catalogo")}
-                  className="text-blue-600 hover:underline font-medium"
+                  className="text-yellow-600 hover:underline font-medium"
                 >
                   Ver mais &rarr;
                 </button>
               </div>
             </div>
-            {/* Product Card 2: Knit T-shirt */}
+            {/* Product Card 2: */}
             <div className="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
               <img
-                src="https://placehold.co/400x300/F0F4F8/6B7A90?text=Camiseta+Malha+PV"
-                alt="Camiseta de Malha PV"
-                className="w-full h-48 object-cover"
+                src={setorOp}
+                alt="Uniformes Operacionais"
+                className="w-full"
               />
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  Camisetas de Malha
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  Versatilidade e durabilidade para o dia a dia, com ou sem
-                  logo.
-                </p>
-                <button
-                  onClick={() => handleNavClick("catalogo")}
-                  className="text-blue-600 hover:underline font-medium"
-                >
-                  Ver mais &rarr;
-                </button>
-              </div>
-            </div>
-            {/* Product Card 3: Operational Wear */}
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
-              <img
-                src="https://placehold.co/400x300/F0F4F8/6B7A90?text=Roupa+Operacional"
-                alt="Roupa Operacional"
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                <h3 className="text-xl font-semibold text-sky-950 mb-2">
                   Uniformes Operacionais
                 </h3>
                 <p className="text-gray-600 mb-4">
-                  Resistência e segurança para setores industriais e serviços.
+                  Versatilidade e durabilidade para o dia a dia, com a sua logo.
                 </p>
                 <button
                   onClick={() => handleNavClick("catalogo")}
-                  className="text-blue-600 hover:underline font-medium"
+                  className="text-yellow-600 hover:underline font-medium"
                 >
                   Ver mais &rarr;
                 </button>
               </div>
             </div>
-            {/* Product Card 4: Women's Business Suits */}
+            {/* Product Card 3: */}
             <div className="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
               <img
-                src="https://placehold.co/400x300/F0F4F8/6B7A90?text=Terno+Feminino"
-                alt="Terno Feminino Social"
-                className="w-full h-48 object-cover"
+                src={setorSaude}
+                alt="Uniformes Clínicas e Saúde"
+                className="w-full"
               />
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  Ternos Sociais (Feminino)
+                <h3 className="text-xl font-semibold text-sky-950 mb-2">
+                  Uniformes Clínicas e Saúde
                 </h3>
                 <p className="text-gray-600 mb-4">
-                  Sofisticação e caimento perfeito para a mulher executiva.
+                  Proteção necessária segundo as normas de segurança.
                 </p>
                 <button
                   onClick={() => handleNavClick("catalogo")}
-                  className="text-blue-600 hover:underline font-medium"
+                  className="text-yellow-600 hover:underline font-medium"
+                >
+                  Ver mais &rarr;
+                </button>
+              </div>
+            </div>
+            {/* Product Card 4: */}
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+              <img
+                src={setorOp}
+                alt="Uniformes Operacionais"
+                className="w-full"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-sky-950 mb-2">
+                  Uniformes Operacionais
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  Versatilidade e durabilidade para o dia a dia, com a sua logo.
+                </p>
+                <button
+                  onClick={() => handleNavClick("catalogo")}
+                  className="text-yellow-600 hover:underline font-medium"
                 >
                   Ver mais &rarr;
                 </button>
