@@ -220,14 +220,6 @@ const App = () => {
               registrada do nosso atelier.
             </p>
 
-            <p className="text-lg text-sky-950 leading-relaxed mb-4">
-              Essa diversidade de criações ao longo do tempo nos proporcionou
-              não apenas experiência, mas também sensibilidade estética e
-              técnica. Hoje, nossa equipe atua com ainda mais precisão em cada
-              etapa da produção, garantindo resultados alinhados às expectativas
-              e necessidades de cada cliente.
-            </p>
-
             <p className="text-lg text-sky-950 leading-relaxed">
               Nossa missão é fortalecer a imagem da sua marca através de
               uniformes que refletem profissionalismo, coerência e a identidade
