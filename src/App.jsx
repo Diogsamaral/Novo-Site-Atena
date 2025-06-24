@@ -216,7 +216,7 @@ const App = () => {
           <div className="relative overflow-hidden rounded-xl shadow-lg">
             {/* Imagem inspirada na última imagem de moldes */}
             <img
-              src="https://placehold.co/600x400/D0DDEB/304156?text=Atelier+Criativo"
+              src={quemSomos}
               alt="Atelier de design de uniformes"
               className="w-full h-auto object-cover"
             />
