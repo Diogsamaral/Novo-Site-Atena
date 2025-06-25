@@ -171,13 +171,13 @@ const App = () => {
       {/* Hero Section */}
       <section
         id="hero"
-        className="py-20 h-screen bg-linear-to-t from-white via-orange-200 to-yellow-600 text-sky-950 md:py-32 relative"
+        className="py-20 md:h-screen bg-linear-to-t from-white via-orange-200 to-yellow-600 text-sky-950 md:py-32 md:relative"
       >
         <div className="container mx-auto px-4 text-start relative z-10">
-          <h1 className="text-xl w-2xl md:text-6xl  font-extrabold leading-tight mb-6">
+          <h1 className="text-xl w-2xl md:text-5xl  font-extrabold leading-tight mb-6">
             Uniformes Profissionais <br className="" /> Que Inspiram Confiança.
           </h1>
-          <p className="text-md md:text-2xl mb-10">
+          <p className="text-md md:w-xl  md:text-xl mb-10">
             Qualidade, durabilidade e estilo para a sua equipe se destacar em
             qualquer ambiente.
           </p>
@@ -191,7 +191,7 @@ const App = () => {
         <img
           src={capa}
           alt=""
-          className="w-3xl lg:w-5xl absolute bottom-0 right-0"
+          className="w-3xl lg:w-5xl md:absolute bottom-0 right-0"
         />
       </section>
 
