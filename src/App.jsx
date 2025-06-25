@@ -29,7 +29,7 @@ const App = () => {
   return (
     <div className="bg-gray-50 text-gray-800">
       {/* Header / Navbar - Usando a cor de fundo bg-sky-100 */}
-      <header className="bg-sky-100 flex shadow-md py-4 sticky top-0 z-50">
+      <header className="bg-sky-100 w-full flex shadow-md py-4 sticky top-0 z-50">
         <div className="container mx-auto px-4 flex justify-between items-center">
           {/* Atna Logo - Agora com a tag <img> e largura w-30 */}
           <a
@@ -174,7 +174,7 @@ const App = () => {
         className="py-20 h-screen bg-linear-to-t from-white via-orange-200 to-yellow-600 text-sky-950 md:py-32 relative"
       >
         <div className="container mx-auto px-4 text-start relative z-10">
-          <h1 className="text-4xl w-2xl md:text-6xl font-extrabold leading-tight mb-6">
+          <h1 className="text-6xl w-2xl md:text-7xl font-extrabold leading-tight mb-6">
             Uniformes Profissionais <br className="" /> Que Inspiram Confiança.
           </h1>
           <p className="text-4xl w-md md:text-xl mb-10 max-w-2xl">
@@ -191,7 +191,7 @@ const App = () => {
         <img
           src={capa}
           alt=""
-          className="w-5xl md:w-8xl absolute bottom-0 right-0"
+          className="w-3xl lg:w-5xl absolute bottom-0 right-0"
         />
       </section>
 
@@ -211,7 +211,6 @@ const App = () => {
               características únicas de cada modelo são cuidadosamente
               valorizados.
             </p>
-
             <p className="text-lg text-sky-950 leading-relaxed mb-4">
               Nosso portfólio é amplo e versátil: produzimos desde a camisa polo
               do representante comercial até o vestido de gala usado por
@@ -219,7 +218,6 @@ const App = () => {
               ou ocasião, cada peça carrega o padrão de excelência que é marca
               registrada do nosso atelier.
             </p>
-
             <p className="text-lg text-sky-950 leading-relaxed">
               Nossa missão é fortalecer a imagem da sua marca através de
               uniformes que refletem profissionalismo, coerência e a identidade
