@@ -174,10 +174,10 @@ const App = () => {
         className="py-20 md:h-screen bg-linear-to-t from-white via-orange-200 to-yellow-600 text-sky-950 md:py-32 md:relative"
       >
         <div className="container mx-auto px-4 text-start relative z-10">
-          <h1 className="text-2xl md:text-5xl  font-extrabold leading-tight mb-6">
+          <h1 className="text-4xl md:text-5xl  font-extrabold leading-tight mb-6">
             Uniformes Profissionais <br className="" /> Que Inspiram Confiança.
           </h1>
-          <p className="text-xl md:w-xl  md:text-2xl mb-10">
+          <p className="text-2xl md:w-xl  md:text-3xl mb-10">
             Qualidade, durabilidade e estilo para a sua equipe se destacar em
             qualquer ambiente.
           </p>
