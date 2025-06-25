@@ -174,10 +174,10 @@ const App = () => {
         className="py-20 h-screen bg-linear-to-t from-white via-orange-200 to-yellow-600 text-sky-950 md:py-32 relative"
       >
         <div className="container mx-auto px-4 text-start relative z-10">
-          <h1 className="text-2xl md:text-6xl w-2xl font-extrabold leading-tight mb-6">
+          <h1 className="text-xl w-2xl md:text-6xl  font-extrabold leading-tight mb-6">
             Uniformes Profissionais <br className="" /> Que Inspiram Confiança.
           </h1>
-          <p className="text-lg md:w-md md:text-xl mb-10 max-w-2xl">
+          <p className="text-md md:text-2xl mb-10">
             Qualidade, durabilidade e estilo para a sua equipe se destacar em
             qualquer ambiente.
           </p>
@@ -198,38 +198,34 @@ const App = () => {
       {/* Quem Somos Section */}
       <section
         id="quem-somos"
-        className="py-16 h-screen text-sky-950 md:py-24 bg-white"
+        className="py-16 text-sky-950 md:py-24 bg-white mb-10"
       >
         <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Quem Somos</h2>
-            <p className="text-lg text-sky-950 leading-relaxed mb-4">
+            <p className="text-md text-sky-950 leading-relaxed mb-4">
               O Atelier Neide Amaral é uma empresa especializada na criação e
               desenvolvimento de moda, com foco na entrega de produtos de alta
               qualidade em costura e matéria-prima. Cada peça passa por um
               rigoroso controle de qualidade, onde os detalhes e as
               características únicas de cada modelo são cuidadosamente
-              valorizados.
-            </p>
-            <p className="text-lg text-sky-950 leading-relaxed mb-4">
+              valorizados. <br />
               Nosso portfólio é amplo e versátil: produzimos desde a camisa polo
               do representante comercial até o vestido de gala usado por
               celebridades em eventos sofisticados. Independentemente do estilo
               ou ocasião, cada peça carrega o padrão de excelência que é marca
-              registrada do nosso atelier.
-            </p>
-            <p className="text-lg text-sky-950 leading-relaxed">
+              registrada do nosso atelier. <br />
               Nossa missão é fortalecer a imagem da sua marca através de
               uniformes que refletem profissionalismo, coerência e a identidade
               da sua empresa.
             </p>
           </div>
-          <div className="relative overflow-hidden rounded-xl shadow-lg">
+          <div className="overflow-hidden rounded-xl shadow-lg">
             {/* Imagem inspirada na última imagem de moldes */}
             <img
               src={quemSomos}
               alt="Atelier de design de uniformes"
-              className="w-full h-auto object-cover"
+              className="w-full object-cover"
             />
           </div>
         </div>
