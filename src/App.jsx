@@ -2,9 +2,12 @@ import React, { useState, useEffect } from "react";
 import capa from "../src/assets/capa.png";
 import logo from "../src/assets/logo.png";
 import quemSomos from "../src/assets/quemSomos.png";
-import setorAdm from "../src/assets/setorAdm.png";
+import setorAdm from "../src/assets/setorAdm1.png";
 import setorOp from "../src/assets/setorOp.png";
 import setorSaude from "../src/assets/setorSaude.png";
+import setorEscola from "../src/assets/setorEscola1.png";
+import setorHotel from "../src/assets/setorHotel.png";
+import setorManu from "../src/assets/setorManu.png";
 import catalogo from "../src/assets/catalogo.png";
 
 // Main App component
@@ -243,7 +246,7 @@ const App = () => {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Product Card 1: */}
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+            <div className="bg-sky-50 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
               <img
                 src={setorAdm}
                 alt="Uniformes Administrativos"
@@ -253,7 +256,7 @@ const App = () => {
                 <h3 className="text-xl font-semibold text-sky-950 mb-2">
                   Uniformes Administrativos
                 </h3>
-                <p className="text-gray-600 mb-4">
+                <p className="text-sky-950 mb-4">
                   Elegância e conforto para ambientes corporativos. Diversos
                   modelos, cores e tecidos.
                 </p>
@@ -266,7 +269,7 @@ const App = () => {
               </div>
             </div>
             {/* Product Card 2: */}
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+            <div className="bg-sky-50 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
               <img
                 src={setorOp}
                 alt="Uniformes Operacionais"
@@ -276,7 +279,7 @@ const App = () => {
                 <h3 className="text-xl font-semibold text-sky-950 mb-2">
                   Uniformes Operacionais
                 </h3>
-                <p className="text-gray-600 mb-4">
+                <p className="text-sky-950 mb-4">
                   Versatilidade e durabilidade para o dia a dia, com a sua logo.
                 </p>
                 <button
@@ -288,7 +291,7 @@ const App = () => {
               </div>
             </div>
             {/* Product Card 3: */}
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+            <div className="bg-sky-50 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
               <img
                 src={setorSaude}
                 alt="Uniformes Clínicas e Saúde"
@@ -298,7 +301,7 @@ const App = () => {
                 <h3 className="text-xl font-semibold text-sky-950 mb-2">
                   Uniformes Clínicas e Saúde
                 </h3>
-                <p className="text-gray-600 mb-4">
+                <p className="text-sky-950 mb-4">
                   Proteção necessária segundo as normas de segurança.
                 </p>
                 <button
@@ -310,18 +313,18 @@ const App = () => {
               </div>
             </div>
             {/* Product Card 4: */}
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+            <div className="bg-sky-50 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
               <img
-                src={setorOp}
-                alt="Uniformes Operacionais"
+                src={setorEscola}
+                alt="Uniformes Escolares"
                 className="w-full"
               />
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-sky-950 mb-2">
-                  Uniformes Operacionais
+                  Uniformes Escolares
                 </h3>
-                <p className="text-gray-600 mb-4">
-                  Versatilidade e durabilidade para o dia a dia, com a sua logo.
+                <p className="text-sky-950 mb-4">
+                  Conforto, classe e alinhamento no ambiente de estudo.
                 </p>
                 <button
                   onClick={() => handleNavClick("catalogo")}
@@ -332,44 +335,45 @@ const App = () => {
               </div>
             </div>
             {/* Product Card 5: Aprons and Lab Coats */}
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+            <div className="bg-sky-50 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
               <img
-                src="https://placehold.co/400x300/F0F4F8/6B7A90?text=Avental+Jaleco"
-                alt="Aventais e Jalecos"
-                className="w-full h-48 object-cover"
+                src={setorHotel}
+                alt="Uniformes Hotelaria e Restaurante"
+                className="w-full"
               />
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  Aventais e Jalecos
+                <h3 className="text-xl font-semibold text-sky-950 mb-2">
+                  Uniformes Hotelaria e Restaurante
                 </h3>
-                <p className="text-gray-600 mb-4">
-                  Essenciais para áreas de saúde, gastronomia e serviços gerais.
+                <p className="text-sky-950 mb-4">
+                  Design, conforto, estilo e ótimo caimento para o dia a dia.
                 </p>
                 <button
                   onClick={() => handleNavClick("catalogo")}
-                  className="text-blue-600 hover:underline font-medium"
+                  className="text-yellow-600 hover:underline font-medium"
                 >
                   Ver mais &rarr;
                 </button>
               </div>
             </div>
             {/* Product Card 6: Accessories */}
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+            <div className="bg-sky-50 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
               <img
-                src="https://placehold.co/400x300/F0F4F8/6B7A90?text=Acessorios"
-                alt="Acessórios para Uniformes"
-                className="w-full h-48 object-cover"
+                src={setorManu}
+                alt="Uniformes Manutenção"
+                className="w-full"
               />
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  Acessórios Personalizados
+                <h3 className="text-xl font-semibold text-sky-950 mb-2">
+                  Uniformes Serviços e Manutenção
                 </h3>
-                <p className="text-gray-600 mb-4">
-                  Bonés, toucas, luvas e mais, para complementar o uniforme.
+                <p className="text-sky-950 mb-4">
+                  Durabilidade, tecidos próprios para uso diário, com a logo da
+                  sua empresa.
                 </p>
                 <button
                   onClick={() => handleNavClick("catalogo")}
-                  className="text-blue-600 hover:underline font-medium"
+                  className="text-yellow-600 hover:underline font-medium"
                 >
                   Ver mais &rarr;
                 </button>
