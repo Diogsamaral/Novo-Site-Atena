@@ -5,6 +5,7 @@ import quemSomos from "../src/assets/quemSomos.png";
 import setorAdm from "../src/assets/setorAdm.png";
 import setorOp from "../src/assets/setorOp.png";
 import setorSaude from "../src/assets/setorSaude.png";
+import catalogo from "../src/assets/catalogo.png";
 
 // Main App component
 const App = () => {
@@ -37,8 +38,7 @@ const App = () => {
             className="flex items-center space-x-2 w-30"
             onClick={() => handleNavClick("hero")}
           >
-            <img src={logo} alt="Atna Uniformes Logo" className="h-10" />{" "}
-            {/* Adicionei h-10 para um tamanho razoável */}
+            <img src={logo} alt="Atna Uniformes Logo" className="h-10 " />{" "}
           </a>
 
           {/* Hamburger menu button for mobile */}
@@ -177,7 +177,7 @@ const App = () => {
           <h1 className="text-4xl md:text-5xl  font-extrabold leading-tight mb-6">
             Uniformes Profissionais <br className="" /> Que Inspiram Confiança.
           </h1>
-          <p className="text-2xl md:w-xl  md:text-3xl mb-10">
+          <p className="text-2xl md:w-lg  md:text-3xl mb-10">
             Qualidade, durabilidade e estilo para a sua equipe se destacar em
             qualquer ambiente.
           </p>
@@ -191,7 +191,7 @@ const App = () => {
         <img
           src={capa}
           alt=""
-          className="w-3xl lg:w-5xl md:absolute bottom-0 right-0"
+          className="w-3xl bottom-0 right-0 mask-b-from-80% mask-b-to-90% md:absolute lg:w-4xl"
         />
       </section>
 
@@ -209,12 +209,16 @@ const App = () => {
               qualidade em costura e matéria-prima. Cada peça passa por um
               rigoroso controle de qualidade, onde os detalhes e as
               características únicas de cada modelo são cuidadosamente
-              valorizados. <br />
+              valorizados.
+              <br />
+              <br />
               Nosso portfólio é amplo e versátil: produzimos desde a camisa polo
               do representante comercial até o vestido de gala usado por
               celebridades em eventos sofisticados. Independentemente do estilo
               ou ocasião, cada peça carrega o padrão de excelência que é marca
-              registrada do nosso atelier. <br />
+              registrada do nosso atelier.
+              <br />
+              <br />
               Nossa missão é fortalecer a imagem da sua marca através de
               uniformes que refletem profissionalismo, coerência e a identidade
               da sua empresa.
@@ -232,7 +236,7 @@ const App = () => {
       </section>
 
       {/* Produtos Section */}
-      <section id="produtos" className="py-16 md:py-24 bg-gray-50">
+      <section id="produtos" className="py-16 md:py-24 bg-gray-100">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-sky-950 mb-12">
             Nossos Produtos
@@ -376,27 +380,30 @@ const App = () => {
       </section>
 
       {/* Catalog Section */}
-      <section id="catalogo" className="py-16 md:py-24 bg-white">
+      <section
+        id="catalogo"
+        className="py-16 md:py-24 bg-linear-to-t from-yellow-600 via-yellow-100 to-gray-100 "
+      >
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
-            Baixe Nosso Catálogo Completo
+          <h2 className="text-3xl md:text-4xl font-bold text-sky-950 mb-8">
+            Veja Nosso Catálogo Completo
           </h2>
-          <p className="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">
+          <p className="text-lg text-sky-950 mb-8 max-w-3xl mx-auto">
             Explore nossa vasta coleção de uniformes profissionais, com detalhes
             sobre tecidos, modelos, opções de personalização e tabelas de
             medidas.
           </p>
           <a
-            href="#"
-            className="bg-green-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-green-700 transition-colors duration-300 shadow-xl inline-block transform hover:scale-105"
+            href="https://drive.google.com/drive/folders/1dh6d935VkK0bmlcnAcvw0_DEeUN3RLUt?usp=sharing"
+            className="bg-green-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-yellow-600 transition-colors duration-300 shadow-xl inline-block transform hover:scale-105"
           >
-            Download do Catálogo (PDF)
+            Ver Catálogo Google Drive
           </a>
           <div className="mt-12">
             <img
-              src="https://placehold.co/800x450/E2E8F0/4A5568?text=Preview+Catalogo"
+              src={catalogo}
               alt="Preview do Catálogo de Uniformes"
-              className="mx-auto rounded-xl shadow-lg"
+              className="h-96 mx-auto rounded-xl shadow-lg"
             />
           </div>
         </div>
