@@ -9,6 +9,10 @@ import setorEscola from "../src/assets/setorEscola1.png";
 import setorHotel from "../src/assets/setorHotel.png";
 import setorManu from "../src/assets/setorManu.png";
 import catalogo from "../src/assets/catalogo.png";
+import contatoB from "../src/assets/contatoBriefing.jpg";
+import prototipo from "../src/assets/designPrototipo.jpg";
+import producao from "../src/assets/producaoQualidade1.jpg";
+import entrega from "../src/assets/entregaPosvenda2.jpg";
 
 // Main App component
 const App = () => {
@@ -33,7 +37,7 @@ const App = () => {
   return (
     <div className="bg-gray-50 text-gray-800">
       {/* Header / Navbar - Usando a cor de fundo bg-sky-100 */}
-      <header className="bg-sky-100 w-full flex shadow-md py-4 sticky top-0 z-50">
+      <header className="bg-sky-100 items-center w-full flex shadow-md py-4 sticky top-0 z-50">
         <div className="container mx-auto px-4 flex justify-between items-center">
           {/* Atna Logo - Agora com a tag <img> e largura w-30 */}
           <a
@@ -414,50 +418,81 @@ const App = () => {
       </section>
 
       {/* How It Works Section */}
-      <section id="como-funciona" className="py-16 md:py-24 bg-gray-50">
+      <section
+        id="como-funciona"
+        className="py-16 md:py-24 bg-linear-to-t from-gray-50 via-yellow-100 to-yellow-600"
+      >
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-sky-950 mb-12">
             Como Funciona Nosso Processo
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Step 1 */}
-            <div className="bg-white rounded-xl shadow-lg p-8 text-center transform hover:scale-105 transition-transform duration-300">
+            <div className="bg-sky-50 rounded-xl shadow-lg p-8 text-center transform hover:scale-105 transition-transform duration-300">
               <div className="text-blue-600 text-5xl mb-4">1</div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+              <div>
+                <img
+                  src={contatoB}
+                  alt="montagem mão peças quebra cabeça"
+                  className="w-md mb-4"
+                />
+              </div>
+              <h3 className="text-xl font-semibold text-sky-950 mb-3">
                 Contato e Briefing
               </h3>
-              <p className="text-gray-600">
+              <p className="text-sky-950">
                 Entendemos suas necessidades, setor e identidade de marca.
               </p>
             </div>
             {/* Step 2 */}
-            <div className="bg-white rounded-xl shadow-lg p-8 text-center transform hover:scale-105 transition-transform duration-300">
+            <div className="bg-sky-50 rounded-xl shadow-lg p-8 text-center transform hover:scale-105 transition-transform duration-300">
               <div className="text-blue-600 text-5xl mb-4">2</div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+              <div>
+                <img
+                  src={prototipo}
+                  alt="montagem mão peças quebra cabeça"
+                  className="w-md mb-4"
+                />
+              </div>
+              <h3 className="text-xl font-semibold text-sky-950 mb-3">
                 Design e Prototipagem
               </h3>
-              <p className="text-gray-600">
+              <p className="text-sky-950">
                 Criamos designs exclusivos e protótipos para sua aprovação.
               </p>
             </div>
             {/* Step 3 */}
-            <div className="bg-white rounded-xl shadow-lg p-8 text-center transform hover:scale-105 transition-transform duration-300">
+            <div className="bg-sky-50 rounded-xl shadow-lg p-8 text-center transform hover:scale-105 transition-transform duration-300">
               <div className="text-blue-600 text-5xl mb-4">3</div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+              <div>
+                <img
+                  src={producao}
+                  alt="montagem mão segurando lupa"
+                  className="w-md mb-4"
+                />
+              </div>
+              <h3 className="text-xl font-semibold text-sky-950 mb-3">
                 Produção e Qualidade
               </h3>
-              <p className="text-gray-600">
+              <p className="text-sky-950">
                 Fabricação com materiais de ponta e rigoroso controle de
                 qualidade.
               </p>
             </div>
             {/* Step 4 */}
-            <div className="bg-white rounded-xl shadow-lg p-8 text-center transform hover:scale-105 transition-transform duration-300">
+            <div className="bg-sky-50 rounded-xl shadow-lg p-8 text-center transform hover:scale-105 transition-transform duration-300">
               <div className="text-blue-600 text-5xl mb-4">4</div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+              <div>
+                <img
+                  src={entrega}
+                  alt="caixas prontas para entregar"
+                  className="w-md mb-4"
+                />
+              </div>
+              <h3 className="text-xl font-semibold text-sky-950 mb-3">
                 Entrega e Pós-Venda
               </h3>
-              <p className="text-gray-600">
+              <p className="text-sky-950">
                 Entrega rápida e suporte contínuo para sua satisfação.
               </p>
             </div>
