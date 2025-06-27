@@ -13,6 +13,7 @@ import contatoB from "../src/assets/contatoBriefing.jpg";
 import prototipo from "../src/assets/designPrototipo.jpg";
 import producao from "../src/assets/producaoQualidade1.jpg";
 import entrega from "../src/assets/entregaPosvenda2.jpg";
+import AgendamentoSection from "../src/components/agendamentoSection";
 
 // Main App component
 const App = () => {
@@ -178,7 +179,7 @@ const App = () => {
       {/* Hero Section */}
       <section
         id="hero"
-        className="py-20 md:h-screen bg-linear-to-t from-white via-orange-200 to-yellow-600 text-sky-950 md:py-32 md:relative"
+        className="py-20 bg-linear-to-t from-white via-orange-200 to-yellow-600 text-sky-950 md:py-32 md:relative md:h-screen"
       >
         <div className="container mx-auto px-4 text-start relative z-10">
           <h1 className="text-4xl text-center md:text-start md:text-5xl  font-extrabold leading-tight mb-6">
@@ -207,7 +208,7 @@ const App = () => {
       {/* Quem Somos Section */}
       <section
         id="quem-somos"
-        className="py-16 text-sky-950 md:py-24 bg-linear-to-t from-gray-100 to-white"
+        className="py-16 scroll-mt-96 text-sky-950 md:py-24 bg-linear-to-t from-gray-100 to-white md:scroll-mt-0"
       >
         <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
@@ -245,7 +246,10 @@ const App = () => {
       </section>
 
       {/* Produtos Section */}
-      <section id="produtos" className="py-16 md:py-24 bg-gray-100">
+      <section
+        id="produtos"
+        className="py-16 scroll-mt-96 bg-gray-100 md:py-24 md:scroll-mt-0"
+      >
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-sky-950 mb-12">
             Nossos Produtos
@@ -392,7 +396,7 @@ const App = () => {
       {/* Catalog Section */}
       <section
         id="catalogo"
-        className="py-16 md:py-24 bg-linear-to-t from-yellow-600 via-yellow-100 to-gray-100 "
+        className="py-16 scroll-mt-96 bg-linear-to-t from-yellow-600 via-yellow-100 to-gray-100 md:py-24 md:scroll-mt-0"
       >
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-sky-950 mb-8">
@@ -422,7 +426,7 @@ const App = () => {
       {/* How It Works Section */}
       <section
         id="como-funciona"
-        className="py-16 md:py-24 bg-linear-to-t from-gray-50 via-yellow-100 to-yellow-600"
+        className="py-16 scroll-mt-96 bg-linear-to-t from-gray-50 via-yellow-100 to-yellow-600 md:py-24 md:scroll-mt-0"
       >
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-sky-950 mb-12">
@@ -503,33 +507,13 @@ const App = () => {
       </section>
 
       {/* Schedule Appointment Section (Final Call to Action) */}
-      <section
-        id="agendamento"
-        className="py-16 md:py-24 bg-blue-700 text-white"
-      >
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8">
-            Pronto para Elevar sua Marca?
-          </h2>
-          <p className="text-lg md:text-xl mb-10 max-w-2xl mx-auto">
-            Agende um atendimento com nossos especialistas e descubra como
-            podemos criar os uniformes perfeitos para sua empresa.
-          </p>
-          <a
-            href="mailto:contato@atnauniformes.com.br"
-            className="bg-white text-blue-700 px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-100 transition-colors duration-300 shadow-xl inline-block transform hover:scale-105"
-          >
-            Agendar Atendimento Agora!
-          </a>
-        </div>
-      </section>
+      <AgendamentoSection />
 
       {/* Footer */}
       <footer className="bg-gray-900 text-gray-300 py-10">
         <div className="container mx-auto px-4 text-center">
           <p>
-            &copy; 2025 Atna Uniformes Profissionais. Todos os direitos
-            reservados.
+            &copy; 2025 ATE.N.A. confecções LTDA. Todos os direitos reservados.
           </p>
           <div className="mt-4 text-sm">
             <a href="#" className="hover:text-blue-500 mx-2">
@@ -541,7 +525,9 @@ const App = () => {
             </a>
           </div>
           <div className="mt-6 text-lg">
-            <p>Contato: (XX) XXXX-XXXX | contato@atnauniformes.com.br</p>
+            <p>
+              Contato: (31) 99768-0504 | vendasatelierneideamaral@gmail.com.br
+            </p>
           </div>
         </div>
       </footer>
