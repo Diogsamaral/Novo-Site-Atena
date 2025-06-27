@@ -181,19 +181,21 @@ const App = () => {
         className="py-20 md:h-screen bg-linear-to-t from-white via-orange-200 to-yellow-600 text-sky-950 md:py-32 md:relative"
       >
         <div className="container mx-auto px-4 text-start relative z-10">
-          <h1 className="text-4xl md:text-5xl  font-extrabold leading-tight mb-6">
+          <h1 className="text-4xl text-center md:text-start md:text-5xl  font-extrabold leading-tight mb-6">
             Uniformes Profissionais <br className="" /> Que Inspiram Confiança.
           </h1>
-          <p className="text-2xl md:w-lg  md:text-3xl mb-10">
+          <p className="text-2xl text-center md:text-start md:w-lg  md:text-3xl mb-10">
             Qualidade, durabilidade e estilo para a sua equipe se destacar em
             qualquer ambiente.
           </p>
-          <button
-            onClick={() => handleNavClick("agendamento")}
-            className="bg-sky-950 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-yellow-600 transition-colors duration-300 shadow-xl inline-block transform hover:scale-105"
-          >
-            Solicite um Orçamento Agora
-          </button>
+          <div className="text-center md:text-start">
+            <button
+              onClick={() => handleNavClick("agendamento")}
+              className="bg-sky-950 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-yellow-600 transition-colors duration-300 shadow-xl inline-block transform hover:scale-105"
+            >
+              Solicite um Orçamento Agora
+            </button>
+          </div>
         </div>
         <img
           src={capa}
@@ -205,7 +207,7 @@ const App = () => {
       {/* Quem Somos Section */}
       <section
         id="quem-somos"
-        className="py-16 text-sky-950 md:py-24 bg-white mb-10"
+        className="py-16 text-sky-950 md:py-24 bg-linear-to-t from-gray-100 to-white"
       >
         <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
